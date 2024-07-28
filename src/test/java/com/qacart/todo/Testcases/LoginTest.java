@@ -21,7 +21,7 @@ public class LoginTest extends BaseTest {
         driver.findElement(By.cssSelector("[data-testid=\"email\"]")).sendKeys("ashawki86@gmail.com");
         driver.findElement(By.cssSelector("[data-testid=\"password\"]")).sendKeys("Aa123456#");
         driver.findElement(By.cssSelector("[data-testid=\"submit\"]")).click();
-        
+
         boolean WelcomeMessage = driver.findElement(By.cssSelector("[data-testid=\"welcome\"]")).isDisplayed();
 
         Assert.assertTrue(WelcomeMessage);
